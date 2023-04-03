@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.memo{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.memo_list{
+    width: 100%;
+    max-width: 269px;
+}
+.memo_list>ul{
+    list-style: none;
+}
+.memo_list li{
+    font-family: 'Euclid Circular A';
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000000;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 12px 20px 12px 16px;
+    margin-bottom: 10px;
+    padding-left: 16px;
+}
+.memo_list_title, .memo_content_title{
+    font-family: 'Euclid Circular A';
+    font-size: 46px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 60px;
+}
+.memo_content_title{
+    text-align: center;
+}
+
+.memo_content_1{
+    width: 100%;
+    max-width: 850px;
+    margin-left: 181px;
+}
+.memo_content_subtitle{
+    font-family: 'Euclid Circular A';
+    font-size: 40px;
+    line-height: 51px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 48px;
+}
+.memo_content_1 img, .memo_content_2 img, .memo_content_3 img{
+    width: 100%;
+    max-width: 850px;
+    padding: 48px 0;
+}
+p, li{
+    font-family: 'HelveticaNeueCyr';
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    color: #333333;
+}
+p{
+    padding-bottom: 20px;
+}
+.memo_content_1 li, .memo_content_2 li, .memo_content_3 li{
+    margin-left: 25px;
+}
+span{
+    font-family: 'HelveticaNeueCyr';
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 550;
+    color: #333333;
+}
+
+.memo_content_2{
+    width: 100%;
+    max-width: 850px;
+    margin-left: 181px;
+}
+.memo_content_3{
+    width: 100%;
+    max-width: 850px;
+    margin-left: 181px;
+}
+.tab_memo_content.active{
+    display: block;
+}
+.tab_memo_content{
+    display: none;
+}
+.tab_memo:hover{
+    border: 1px solid #FFCA3C;
+    border-radius: 30px;
+    padding: 12px 20px 12px 16px;
+}
+.tab_memo.active{
+    border: 1px solid #FFCA3C;
+    background-color: #FFCA3C;
+    border-radius: 30px;
+    padding: 12px 20px 12px 16px;
+}
+
+@media (max-width: 1200px) {
+    .memo{
+        display: block;
+    }
+    .memo_content_1, .memo_content_2, .memo_content_3{
+        margin: 0 auto;
+    }
+    .memo_content_title{
+        padding-top: 82px;
+    }
+}
+
+@media (max-width: 450px) {
+    .memo_list_title{
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 36px;
+        padding-bottom: 46px;
+    }
+    .memo_content_title{
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 600;
+        padding-top: 41px;
+        padding-bottom: 18px;
+    }
+    .memo_content_subtitle{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        padding-bottom: 18px;
+    }
+    p, li{
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+    span{
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+    .memo_content_1 img, .memo_content_2 img, .memo_content_3 img{
+        padding: 18px 0;
+    }
+}
